@@ -1,4 +1,4 @@
-## Example to reproduce OOM with OpenTelemetry Redisson instrumentation
+## Example to reproduce OOM with OpenTelemetry Java instrumentation and Redis
 related to [issue](https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/9952)
 
 ## Setup
