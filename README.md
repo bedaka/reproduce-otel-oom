@@ -7,6 +7,5 @@
 
 the same execution with otel agent disabled:
 - `java -Xmx700m -Dotel.instrumentation.redisson.enabled=false -XX:+ExitOnOutOfMemoryError -XX:+HeapDumpOnOutOfMemoryError -javaagent:opentelemetry-javaagent.jar -
-jar target/reproduceOtelRedissonOOM-0.0.1-SNAPSHOT.jar 
+jar target/reproduceOtelRedissonOOM-0.0.1-SNAPSHOT.jar` 
   - this should succeed, even though redis might log RedisTimeoutExceptions due to the high load it will eventually finish (docker stats shows the container is still busy).
-`
